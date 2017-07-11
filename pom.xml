@@ -8,7 +8,8 @@
 	<modules>
 		<module>tutorials-springboot</module>
 		<module>tutorials-dubbo</module>
-	</modules>
+        <module>tutorials-redis</module>
+    </modules>
 
 	<properties>
 		<java.version>1.8</java.version>
