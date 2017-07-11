@@ -9,6 +9,7 @@
 		<module>tutorials-springboot</module>
 		<module>tutorials-dubbo</module>
         <module>tutorials-redis</module>
+        <module>tutorials-rabbitmq</module>
     </modules>
 
 	<properties>
