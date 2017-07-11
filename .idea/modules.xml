@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/tutorials.iml" filepath="$PROJECT_DIR$/tutorials.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tutorials-dubbo/tutorials-dubbo.iml" filepath="$PROJECT_DIR$/tutorials-dubbo/tutorials-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tutorials-dubbo/tutorials-dubbo-common/tutorials-dubbo-common.iml" filepath="$PROJECT_DIR$/tutorials-dubbo/tutorials-dubbo-common/tutorials-dubbo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tutorials-dubbo/tutorials-dubbo-consumer/tutorials-dubbo-consumer.iml" filepath="$PROJECT_DIR$/tutorials-dubbo/tutorials-dubbo-consumer/tutorials-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tutorials-dubbo/tutorials-dubbo-provider/tutorials-dubbo-provider.iml" filepath="$PROJECT_DIR$/tutorials-dubbo/tutorials-dubbo-provider/tutorials-dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tutorials-redis/tutorials-redis.iml" filepath="$PROJECT_DIR$/tutorials-redis/tutorials-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tutorials-springboot/tutorials-springboot.iml" filepath="$PROJECT_DIR$/tutorials-springboot/tutorials-springboot.iml" />
+    </modules>
+  </component>
+</project>

@@ -10,7 +10,8 @@
 		<module>tutorials-dubbo</module>
         <module>tutorials-redis</module>
         <module>tutorials-rabbitmq</module>
-    </modules>
+        <module>tutorials-mybatis</module>
+	</modules>
 
 	<properties>
 		<java.version>1.8</java.version>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tutorials-dubbo-common" />
+        <module name="tutorials-dubbo-consumer" />
+        <module name="tutorials-dubbo-provider" />
+        <module name="tutorials-redis" />
+        <module name="tutorials-springboot" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tutorials" target="1.5" />
+      <module name="tutorials-dubbo" target="1.5" />
+      <module name="tutorials-dubbo-common" target="1.5" />
+      <module name="tutorials-dubbo-consumer" target="1.5" />
+      <module name="tutorials-dubbo-provider" target="1.5" />
+      <module name="tutorials-rabbitmq" target="1.5" />
+      <module name="tutorials-redis" target="1.5" />
+      <module name="tutorials-springboot" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
