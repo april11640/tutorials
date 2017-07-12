@@ -1,10 +1,10 @@
 package my.tutorials.dubbo.provider;
 
-import org.springframework.stereotype.Service;
+import com.alibaba.dubbo.config.annotation.Service;
 
 import my.tutorials.dubbo.common.HelloService;
 
-@Service
+@Service(version = "1.0.0")
 public class HelloServiceImpl implements HelloService {
 
 	public String greeting(String name) {
