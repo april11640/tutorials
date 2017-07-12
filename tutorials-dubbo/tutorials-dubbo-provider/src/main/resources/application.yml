@@ -1,0 +1,8 @@
+spring:
+    dubbo:
+        application.name: tutorials-dubbo-provider
+        registry.address: multicast://224.5.6.7:1234
+        protocol:
+            name: dubbo
+            port: 20880
+        scan: my.tutorials.dubbo.provider
