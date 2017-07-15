@@ -11,6 +11,7 @@
         <module>tutorials-redis</module>
         <module>tutorials-rabbitmq</module>
         <module>tutorials-mybatis</module>
+        <module>tutorials-web</module>
 	</modules>
 
 	<properties>
