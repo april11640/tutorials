@@ -29,7 +29,7 @@ public class StudentController {
 		studentList.remove("ad");
 		mav.addObject("studentList", studentList);
 		
-		mav.setViewName("freemarker/student");
+		mav.setViewName("student");
 		return mav;
 	}
 
