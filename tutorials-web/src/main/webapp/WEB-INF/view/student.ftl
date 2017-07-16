@@ -5,6 +5,12 @@
 	<p>年龄：${studentList.age}</p>  
 	<p>地址：${studentList.address}</p>  
 	<p>其它：${studentList.ad!}</p>  
+	
+	<ul>
+	<#list studentList?keys as key> 
+    	<li>${key} = ${studentList[key]}</li> 
+	</#list> 
+	</ul>  
   
 	Welcome ${user!}!  
 	Welcome ${user!'your name'}!  
