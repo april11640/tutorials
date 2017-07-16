@@ -5,6 +5,7 @@ import java.util.Calendar;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 public class TimeBasedAccessInterceptor extends HandlerInterceptorAdapter {
@@ -20,8 +21,10 @@ public class TimeBasedAccessInterceptor extends HandlerInterceptorAdapter {
         this.closingTime = closingTime;
     }
 
+    @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
             Object handler) throws Exception {
+    	System.out.println("============================>pre");
         Calendar cal = Calendar.getInstance();
         int hour = cal.get(Calendar.HOUR_OF_DAY);
         if (openingTime <= hour && hour < closingTime) {
@@ -30,5 +33,12 @@ public class TimeBasedAccessInterceptor extends HandlerInterceptorAdapter {
         response.sendRedirect("http://www.baidu.com");
         return false;
     }
+    
+    @Override
+	public void postHandle(
+			HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)
+			throws Exception {
+    	System.out.println("<============================post");
+	}
 
 }

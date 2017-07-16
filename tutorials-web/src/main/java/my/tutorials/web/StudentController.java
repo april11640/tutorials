@@ -16,6 +16,7 @@ public class StudentController {
 
 	@RequestMapping(value = "get")
 	public ModelAndView testfreemarkerview(HttpServletRequest request, HttpServletResponse response) {
+		System.out.println("============================do");
 		ModelAndView mav = new ModelAndView();
 		
 		String str = "freemark示例";

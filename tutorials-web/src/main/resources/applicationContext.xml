@@ -20,6 +20,16 @@
 
 	<mvc:annotation-driven />
 
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="my.tutorials.web.TimeBasedAccessInterceptor">
+				<property name="openingTime" value="9" />
+				<property name="closingTime" value="18" />
+			</bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
 	<bean id="jsonMessageConverter"
 		class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
 	</bean>
@@ -30,20 +40,6 @@
 				<ref bean="jsonMessageConverter" />
 			</list>
 		</property>
-	</bean>
-
-	<bean id="handlerMapping"
-		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
-		<property name="interceptors">
-			<list>
-				<ref bean="officeHoursInterceptor" />
-			</list>
-		</property>
-	</bean>
-
-	<bean id="officeHoursInterceptor" class="my.tutorials.web.TimeBasedAccessInterceptor">
-		<property name="openingTime" value="9" />
-		<property name="closingTime" value="18" />
 	</bean>
 
 	<bean id="freemarkerConfig"
@@ -63,8 +59,8 @@
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-<!-- 		<property name="viewClass" -->
-<!-- 			value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"></property> -->
+		<!-- <property name="viewClass" -->
+		<!-- value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"></property> -->
 		<property name="cache" value="true" />
 		<property name="prefix" value="" />
 		<property name="suffix" value=".ftl" />
